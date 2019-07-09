@@ -4,14 +4,22 @@
 # find smallest
 # try/except to put out an appropriate message and ignore not valid number/strings
 
+memo=[]
+
+largest = None
+smallest = None
+
 
 while True:
-    val=input('enter a number: ')
+    val=input()
     if val == 'done':
         break
     try:
-        fval=float(val)
+        fval=int(val)
     except:
-        print('enter a VALID number')
+        print('Invalid input')
         continue
-    print (fval)
+    memo.append(fval)
+
+print ('Maximum is',max(memo))
+print ('Minimum is',min(memo))
