@@ -12,8 +12,12 @@ while True:
     val=input('Enter a number: ')
     if val == 'done':
         break
-    fval=float(val)
-    print (fval)
+    try:
+        fval = float(val)
+    except:
+        print ('Enter a valid number')
+        continue
+
     num=num+1
     somma=somma+fval
 
