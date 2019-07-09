@@ -4,3 +4,18 @@
 # print the count
 # print the average at the end
 
+
+somma=0
+num=0
+
+while True:
+    val=input('Enter a number: ')
+    if val == 'done':
+        break
+    fval=float(val)
+    print (fval)
+    num=num+1
+    somma=somma+fval
+
+print('all done')
+print(somma,num,somma/num)
