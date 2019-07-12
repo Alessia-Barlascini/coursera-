@@ -1,3 +1,9 @@
+# ask for file mbox-short.txt
+# open the file
+# looking for lines of the form: X-DSPAM-Confidence:    0.8475
+# Count these lines and extract the floating point values
+# compute the average of those values and produce an output
+
 memo=[]
 fname=input('Enter name file: ')
 fhand=open(fname)
