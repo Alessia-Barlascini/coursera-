@@ -1,4 +1,4 @@
-#ask for a file
+#ask for file mbox-short.txt
 #open the file
 #looking for lines of the form: X-DSPAM-Confidence:    0.8475
 #Count these lines and extract the floating point values
@@ -15,9 +15,7 @@ for line in fhand:
         line=line[line.find('0'):]                  #extract numerical part
         line=float(line)                            #tranform into float
         line= memo.append(line)                     #tranform line into a list
-#print (memo)
-#print(len(memo))
-#print (line)
+
 average=mean(memo)
 print('Average spam confidence:',average)
 
