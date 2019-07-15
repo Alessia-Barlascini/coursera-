@@ -13,13 +13,13 @@ while True:
     if val == 'done':
         break
     try:
-        fval = float(val)
+        fval=float(val)
     except:
         print ('Enter a valid number')
         continue
 
-    num=num+1
-    somma=somma+fval
+    num += 1
+    somma += fval
 
 print('all done')
 print(somma,num,somma/num)
