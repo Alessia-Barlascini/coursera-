@@ -6,9 +6,6 @@
 
 memo=[]
 
-largest = None
-smallest = None
-
 
 while True:
     val=input()
