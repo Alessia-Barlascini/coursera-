@@ -9,6 +9,7 @@ try:
     h = float(hrs)
 except:
     print("ERROR: Please, enter a valid number")
+    quit()
 
 if h <= 40:
     print(p * h)
